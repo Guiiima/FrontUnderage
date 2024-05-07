@@ -1,0 +1,19 @@
+<div class="navbar-container" [ngClass]="{ collapsed: isNavbarCollapsed }">
+  <nav>
+    <ul *ngIf="!isNavbarCollapsed">
+      <mat-icon> list_alt</mat-icon>
+      <li>
+        <a
+          routerLink="/obterLista"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >obterLista</a>
+        <a
+          routerLink="/Cadastrar"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Cadastrar</a>
+      </li>
+    </ul>
+  </nav>
+</div>
