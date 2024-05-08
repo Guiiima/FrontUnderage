@@ -4,28 +4,28 @@
     <div class="formSearch">
       <form [formGroup]="novoCadastroForm" (ngSubmit)="criarCadastro()">
         <div class="form-group">
-          <label for="nomeCompleto">Nome Completo:</label>
-          <input type="text" id="nomeCompleto" formControlName="nomeCompleto" placeholder="Digite seu nome completo" />
+          <label for="Nome">Nome Completo:</label>
+          <input type="text" id="Nome" formControlName="Nome" placeholder="Digite seu nome completo" />
         </div>
         <div class="form-group">
-          <label for="dataNascimento">Data de Nascimento:</label>
-          <input type="date" id="dataNascimento" formControlName="dataNascimento" placeholder="Selecione sua data de nascimento" />
+          <label for="DataNascimento">Data de Nascimento:</label>
+          <input type="date" id="DataNascimento" formControlName="DataNascimento" placeholder="Selecione sua data de nascimento" />
         </div>
         <div class="form-group">
-          <label for="cpf">CPF:</label>
-          <input type="text" id="cpf" formControlName="cpf" placeholder="Digite seu CPF" />
+          <label for="Cpf">CPF:</label>
+          <input type="text" id="Cpf" formControlName="Cpf" placeholder="Digite seu CPF" />
         </div>
         <div class="form-group">
-          <label for="nomeResponsavel">Nome do Responsável:</label>
-          <input type="text" id="nomeResponsavel" formControlName="nomeResponsavel" placeholder="Digite o nome do responsável" />
+          <label for="NomeResponsavel">Nome do Responsável:</label>
+          <input type="text" id="NomeResponsavel" formControlName="NomeResponsavel" placeholder="Digite o nome do responsável" />
         </div>
         <div class="form-group">
-          <label for="emailResponsavel">E-mail do Responsável:</label>
-          <input type="email" id="emailResponsavel" formControlName="emailResponsavel" placeholder="Digite o e-mail do responsável" />
+          <label for="EmailResponsavel">E-mail do Responsável:</label>
+          <input type="email" id="EmailResponsavel" formControlName="EmailResponsavel" placeholder="Digite o e-mail do responsável" />
         </div>
         <div class="form-group">
-          <label for="telefoneResponsavel">Telefone do Responsável:</label>
-          <input type="tel" id="telefoneResponsavel" formControlName="telefoneResponsavel" placeholder="Digite o telefone do responsável" />
+          <label for="TelefoneResponsavel">Telefone do Responsável:</label>
+          <input type="tel" id="TelefoneResponsavel" formControlName="TelefoneResponsavel" placeholder="Digite o telefone do responsável" />
         </div>
         <button mat-raised-button type="submit">Cadastrar</button>
       </form>

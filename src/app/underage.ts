@@ -1,24 +1,24 @@
 export class IUnderage {
-  nomeCompleto: string;
-  cpf: string;
-  dataNascimento: String;
-  nomeResponsavel: string;
-  emailResponsavel: string;
-  telefoneResponsavel: string;
+  Nome: string;
+  Cpf: string;
+  DataNascimento: string;
+  NomeResponsavel: string;
+  EmailResponsavel: string;
+  TelefoneResponsavel: string;
 
   constructor(
-    nomeCompleto: string,
-    cpf: string,
-    dataNascimento: String,
-    nomeResponsavel: string,
-    emailResponsavel: string,
-    telefoneResponsavel: string
+    Nome: string,
+    Cpf: string,
+    DataNascimento: string,
+    NomeResponsavel: string,
+    EmailResponsavel: string,
+    TelefoneResponsavel: string
   ) {
-    this.nomeCompleto = nomeCompleto;
-    this.cpf = cpf;
-    this.dataNascimento = dataNascimento;
-    this.nomeResponsavel = nomeResponsavel;
-    this.emailResponsavel = emailResponsavel;
-    this.telefoneResponsavel = telefoneResponsavel;
+    this.Nome = Nome;
+    this.Cpf = Cpf;
+    this.DataNascimento = DataNascimento;
+    this.NomeResponsavel = NomeResponsavel;
+    this.EmailResponsavel = EmailResponsavel;
+    this.TelefoneResponsavel = TelefoneResponsavel;
   }
 }

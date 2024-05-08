@@ -24,7 +24,7 @@ export class UnderageService {
       );
   }
   ObterLista(): Observable<IUnderage[]> {
-    const url = `${this.baseUrl}/all-underage`;
+    const url = `${this.baseUrl}/all`;
     return this.http.get<IUnderage[]>(url);
 
   }

@@ -38,12 +38,12 @@ export class UnderageControllerComponent implements OnInit {
   ngOnInit(): void {
     this.chave = this.underageService.chave;
     this.novoCadastroForm = this.fb.group({
-      nomeCompleto: [null, Validators.required],
-      cpf: [null, Validators.required],
-      dataNascimento: [null, Validators.required],
-      nomeResponsavel: [null, Validators.required],
-      emailResponsavel: [null, Validators.required],
-      telefoneResponsavel: [null, Validators.required],
+      Nome: [null, Validators.required],
+      Cpf: [null, Validators.required],
+      DataNascimento: [null, Validators.required],
+      NomeResponsavel: [null, Validators.required],
+      EmailResponsavel: [null, Validators.required],
+      TelefoneResponsavel: [null, Validators.required],
     });
   }
   mascara(text: String) {
@@ -58,8 +58,8 @@ export class UnderageControllerComponent implements OnInit {
   criarCadastro(): void {
     if (this.novoCadastroForm.valid) {
       const novoCadastro: IUnderage = this.novoCadastroForm.value;
-      novoCadastro.cpf = this.encrypt(novoCadastro.cpf)
-      novoCadastro.dataNascimento = this.encrypt(novoCadastro.dataNascimento)
+      novoCadastro.Cpf = this.encrypt(novoCadastro.Cpf)
+      novoCadastro.DataNascimento = this.encrypt(novoCadastro.DataNascimento)
       this.underageService.criarCadastro(novoCadastro).subscribe(() => {
         this.novoCadastroForm.reset();
       });

@@ -7,6 +7,7 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { IUnderage } from '../underage';
 import { MatIconModule } from '@angular/material/icon';
 import { UnderageService } from '../underage.service';
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'app-obter-controller',
@@ -17,7 +18,6 @@ import { UnderageService } from '../underage.service';
 })
 export class ObterControllerComponent {
   chave: string = this.underageService.chave;
-  nodemailer = require('nodemailer');
   tentativa = 0;
   underage: any | undefined
   displayedColumns: string[] = [
