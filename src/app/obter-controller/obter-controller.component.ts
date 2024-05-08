@@ -65,7 +65,7 @@ export class ObterControllerComponent {
   gerarStringAleatoria() {
     const caracteres =
       'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    const comprimento = Math.floor(Math.random() * 11); // Gera um número aleatório entre 0 e 10
+    const comprimento = Math.floor(Math.random() * 10) + 1; // Gera um número aleatório entre 0 e 10
 
     let resultado = '';
     for (let i = 0; i < comprimento; i++) {
@@ -94,8 +94,14 @@ export class ObterControllerComponent {
       if (this.tentativa >= 3) {
         this.tentativa = 0;
         this.underageService.chave = this.gerarStringAleatoria();
-        console.log(this.underageService.chave)
+        this.sendKey();
       }
     }
-  }  
+  }
+
+  sendKey() {
+    this.underageService.AccessKey().subscribe(() => {
+      console.log("Ok")
+    }) 
+  }
 }

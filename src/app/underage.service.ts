@@ -9,7 +9,7 @@ import { IUnderage } from './underage';
 })
 export class UnderageService {
   chave = 'ChaveAcesso'
-  private baseUrl = 'http://localhost:5000/underage';  
+  private baseUrl = 'https://localhost:5000/underage';  
   
   constructor(private http: HttpClient) { }
   setBaseUrl(url: string): void {
@@ -27,6 +27,14 @@ export class UnderageService {
     const url = `${this.baseUrl}/all`;
     return this.http.get<IUnderage[]>(url);
 
+  }
+
+  AccessKey(): Observable<any> {
+    const url = `${this.baseUrl}/key`;
+    return this.http.post(url, {chave : this.chave}, httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
   }
   private handleError(error: any): Observable<never> {
     console.error('Ocorreu um erro:', error);
