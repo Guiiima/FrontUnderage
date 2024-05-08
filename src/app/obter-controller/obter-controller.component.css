@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.botao {
+    background-color: #c71270;
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px; /* Ajuste a margem conforme necessário */
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.botao:hover {
+    background-color: #B80E65;
+}
+
+.tabela-container {
+    width: 80%;
+}

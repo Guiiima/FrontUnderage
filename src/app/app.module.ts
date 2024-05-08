@@ -5,6 +5,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -17,6 +19,7 @@ import { AppComponent } from './app.component';
     MatIconModule,
     HttpClientModule,
     MatMenuModule,
+    FormsModule
   ],
   providers: [
     HttpClientModule,

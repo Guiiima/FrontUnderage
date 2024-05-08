@@ -1,7 +1,7 @@
 <app-nav-bar></app-nav-bar>
 
-<div style="display: flex; justify-content: center; align-items: center">
-  <div style="width: 80%">
+<div class="container">
+  <div class="tabela-container">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
       <ng-container matColumnDef="cpf">
         <th mat-header-cell *matHeaderCellDef>Cpf</th>
@@ -28,4 +28,5 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
   </div>
+  <button class="botao" (click)="obterLista()">Obter Informação</button>
 </div>

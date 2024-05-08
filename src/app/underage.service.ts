@@ -8,8 +8,9 @@ import { IUnderage } from './underage';
   providedIn: 'root'
 })
 export class UnderageService {
+  chave = 'ChaveAcesso'
   private baseUrl = 'http://localhost:5000/underage';  
-
+  
   constructor(private http: HttpClient) { }
   setBaseUrl(url: string): void {
     this.baseUrl = url;

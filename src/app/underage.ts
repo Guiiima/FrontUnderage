@@ -1,7 +1,7 @@
 export class IUnderage {
   nomeCompleto: string;
   cpf: string;
-  dataNascimento: Date;
+  dataNascimento: String;
   nomeResponsavel: string;
   emailResponsavel: string;
   telefoneResponsavel: string;
@@ -9,7 +9,7 @@ export class IUnderage {
   constructor(
     nomeCompleto: string,
     cpf: string,
-    dataNascimento: Date,
+    dataNascimento: String,
     nomeResponsavel: string,
     emailResponsavel: string,
     telefoneResponsavel: string
